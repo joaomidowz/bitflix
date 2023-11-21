@@ -16,7 +16,7 @@ export const episodeResourceOptions: ResourceOptions = {
     uploadFileFeature({
       provider: {
         local: {
-          bucket: path.join(__dirname, '..', '..', '..', 'uploads')
+          bucket: path.join(__dirname, '../../../uploads')
         }
       },
       properties: {
@@ -24,5 +24,5 @@ export const episodeResourceOptions: ResourceOptions = {
         file: 'uploadVideo'
       },
       uploadPath: (record, filename) => `videos/course-${record.get('courseId')}/${filename}`
-    }) 
+    })
   ]
