@@ -29,5 +29,5 @@ export {
     Episode,
     Favorite,
     Like,
-    User,
+    User
 }

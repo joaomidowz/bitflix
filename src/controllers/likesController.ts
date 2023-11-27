@@ -10,7 +10,7 @@ export const likesController = {
 
         try {
         const like = await likeService.create(userId, courseId)
-        return res.status(201).send().json(like)
+        return res.status(201).json(like)
         } catch (err) {
             if (err instanceof Error) {
                 return res.status(400).json({message: err.message})
